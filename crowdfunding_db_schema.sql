@@ -1,9 +1,8 @@
--- Step 1: Create the Database
+--  Create the Database
 DROP DATABASE IF EXISTS crowdfunding_db;
 CREATE DATABASE crowdfunding_db;
-\c crowdfunding_db; -- Connect to the database (for PostgreSQL)
 
--- Step 2: Create Tables
+--  Create Tables
 -- Create Contact table
 DROP TABLE IF EXISTS Contact CASCADE;
 CREATE TABLE Contact (
@@ -50,34 +49,7 @@ CREATE TABLE Campaign (
     FOREIGN KEY (subcategory_id) REFERENCES Subcategory(subcategory_id)
 );
 
--- Step 3: Import Data from CSV Files
--- Adjust the file paths below to the actual locations of your CSV files.
-
--- Import data into Contact table
-COPY Contact(contact_id, name, other_contact_info)
-FROM '/path/to/contacts.csv'
-DELIMITER ','
-CSV HEADER;
-
--- Import data into Category table
-COPY Category(category_id, category)
-FROM '/path/to/category.csv'
-DELIMITER ','
-CSV HEADER;
-
--- Import data into Subcategory table
-COPY Subcategory(subcategory_id, subcategory, category_id)
-FROM '/path/to/subcategory.csv'
-DELIMITER ','
-CSV HEADER;
-
--- Import data into Campaign table
-COPY Campaign(cf_id, contact_id, company_name, description, goal, pledged, outcome, backers_count, country, currency, launch_date, end_date, category_id, subcategory_id)
-FROM '/path/to/campaign.csv'
-DELIMITER ','
-CSV HEADER;
-
--- Step 4: Display Data from Each Table
+-- Display Data from Each Table
 SELECT * FROM Contact;
 SELECT * FROM Category;
 SELECT * FROM Subcategory;
