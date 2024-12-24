@@ -54,19 +54,14 @@ The Jupyter Notebook, `ETL_Mini_Project_EShipman_NTrief.ipynb`, implements the f
 ## Dependencies
 - **Database:**
   - PostgreSQL or any compatible relational database.
-- **Python Libraries:**
+- **Python Libraries:
   - `pandas`
   - `sqlalchemy`
   - `psycopg2`
 
 ## Authors
-- Nathaniel Trief
 - Ethan Shipman
+- Nathaniel Trief
 
 ## License
 This project is open-source under the MIT License.
-
-## Contact
-For any questions or feedback, please contact:
-- Nathaniel Trief: [email@example.com](mailto:email@example.com)
-- Ethan Shipman: [email@example.com](mailto:email@example.com)
