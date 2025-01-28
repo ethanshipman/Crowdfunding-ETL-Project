@@ -1,7 +1,7 @@
 # Crowdfunding ETL Project
 
 ## Overview
-This project is a collaborative effort by Nathaniel Trief and Ethan Shipman to design and implement a comprehensive data pipeline for a crowdfunding platform. It consists of two main components:
+This project is a collaborative effort by Ethan Shipman and Nathaniel Trief to design and implement a comprehensive data pipeline for a crowdfunding platform. It consists of two main components:
 1. **Database Schema Definition:** SQL scripts to create and manage the database.
 2. **ETL Pipeline:** A Jupyter Notebook to extract, transform, and load (ETL) data into the database.
 
